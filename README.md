@@ -79,6 +79,8 @@ Good news:
 
 * Everything is responsive.
 
+* by the law, I developed it from mobile first!
+
 * It's my first time making an cart from zero. That was awesome! I learned a lot!
 
 Bad news:
