@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
 <head>
-  <title>Title</title>
+  <title>Black Friday - Jussi</title>
 
   <!-- Meta tags goes here -->
   <meta charset="UTF-8">
@@ -9,17 +9,382 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <!-- Fonts goes here -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <!-- Fonts and icons goes here -->
+  <link href="//fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" 
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" 
+    crossorigin="anonymous"
+  >
+
+
 
   <!-- CSS goes here -->
   <link rel="stylesheet" type="text/css" href="/public/main.css">
 </head>
 <body>
 
-  <div class="bf__c-container">
-    <h1>Hello World</h1>
-  </div>
+  <header class="header">
+    
+    <div class="bf__c-container">
+      <div class="header__m-cartTrigger">
+        <i class="fas fa-shopping-cart"></i>
+
+        <div class="header__m-cart">
+          <div class="header__m-cartHeader">
+            <h3>Meu carrinho</h3>
+          </div>
+
+          <div class="header__m-cartBody">
+            <p class="empty-cart">Carrinho vazio</p>
+
+            <div class="header__m-cartBody-item">
+              <div class="cartItem__img">
+                <img src="public/images/product-01-imagem-1000X1000.jpg" alt="Geladeira" />
+              </div>
+              
+              <div class="cartItem__description">
+                <h3 class="cartItem__description-Title">Lorem ipsum dolor sit amet</h3>
+
+                <span class="cartItem__description-quantity">Quantidade: <span class="quantity">01</span></span>
+              </div>
+
+              <div class="cartItem__price">
+                <span class="price">R$ 2.519,00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="header__m-cartFooter">
+            <div class="header__m-cartFooter-subtotal">
+              <span class="shipping">Subtotal <span>(frete não incluso):</span></span>
+              <span class="total">R$ <span id="total">0</span></span>
+            </div>
+
+            <a class="bf__c-button" href="#">comprar</a>
+          </div>
+        </div>
+  
+    </div>
+  </header>
+  <section class="hero">
+    <div class="bf__c-container">
+      <div class="hero__m-Description">
+        <h1 class="hero__m-Description-title">black friday</h1>
+        <p class="hero__m-Description-text">Pode começar a se despedir da antiga, sua nova lavadora está aqui.</p>
+        <a href="#">aproveite</a>
+      </div>
+    </div>
+  </section>
+  <section class="refrigerators">
+    <div class="bf__c-container">
+      
+      <h2 class="sectionTitle">Seleção de <span>Geladeiras</span></h2>
+
+      <div class="refrigeratorsContainer">
+        <div class="refrigeratorsContainer__item">
+          
+          <div class="refrigeratorsContainer__itemImage">
+            <img src="public/images/product-01-imagem-frontal-1000X1000.jpg" aria-hidden="true" alt="Geladeira"/>
+            <div class="refrigeratorsContainer__itemPromotion">
+              <span class="promotion-text">50% <span>+ barato</span></span>
+            </div>
+          </div>
+
+          <div class="refrigeratorsContainer__itemDescription">
+            <h3 class="refrigeratorsContainer__itemDescription-title">Lorem ipsum dolor sit amet</h3>
+            <p class="refrigeratorsContainer__itemDescription-model">CF676AR</p>
+            
+            <div class="refrigeratorsContainer__itemDescription-prices">
+              <span class="from">De: R$ <span>2.219,00</span> por:</span>
+              <span class="price">R$ 2.121,00</span>
+              <span class="description">à vista no boleto bancário</span>
+              <span class="term">ou até 12x de R$ <span>528,06</span></span>
+            </div>
+          </div>
+
+          <a class="bf__c-button" href="#">adicionar ao carrinho</a>
+
+        </div>
+        <div class="refrigeratorsContainer__item">
+          
+          <div class="refrigeratorsContainer__itemImage">
+            <img src="public/images/product-01-imagem-frontal-1000X1000.jpg" aria-hidden="true" alt="Geladeira"/>
+            <div class="refrigeratorsContainer__itemPromotion">
+              <span class="promotion-text">50% <span>+ barato</span></span>
+            </div>
+          </div>
+
+          <div class="refrigeratorsContainer__itemDescription">
+            <h3 class="refrigeratorsContainer__itemDescription-title">Lorem ipsum dolor sit amet</h3>
+            <p class="refrigeratorsContainer__itemDescription-model">CF676AR</p>
+            
+            <div class="refrigeratorsContainer__itemDescription-prices">
+              <span class="from">De: R$ <span>2.219,00</span> por:</span>
+              <span class="price">R$ 2.121,00</span>
+              <span class="description">à vista no boleto bancário</span>
+              <span class="term">ou até 12x de R$ <span>528,06</span></span>
+            </div>
+          </div>
+
+          <a class="bf__c-button" href="#">adicionar ao carrinho</a>
+
+        </div>
+        <div class="refrigeratorsContainer__item">
+          
+          <div class="refrigeratorsContainer__itemImage">
+            <img src="public/images/product-01-imagem-frontal-1000X1000.jpg" aria-hidden="true" alt="Geladeira"/>
+            <div class="refrigeratorsContainer__itemPromotion">
+              <span class="promotion-text">50% <span>+ barato</span></span>
+            </div>
+          </div>
+
+          <div class="refrigeratorsContainer__itemDescription">
+            <h3 class="refrigeratorsContainer__itemDescription-title">Lorem ipsum dolor sit amet</h3>
+            <p class="refrigeratorsContainer__itemDescription-model">CF676AR</p>
+            
+            <div class="refrigeratorsContainer__itemDescription-prices">
+              <span class="from">De: R$ <span>2.219,00</span> por:</span>
+              <span class="price">R$ 2.121,00</span>
+              <span class="description">à vista no boleto bancário</span>
+              <span class="term">ou até 12x de R$ <span>528,06</span></span>
+            </div>
+          </div>
+
+          <a class="bf__c-button" href="#">adicionar ao carrinho</a>
+
+        </div>
+        <div class="refrigeratorsContainer__item">
+          
+          <div class="refrigeratorsContainer__itemImage">
+            <img src="public/images/product-01-imagem-frontal-1000X1000.jpg" aria-hidden="true" alt="Geladeira"/>
+            <div class="refrigeratorsContainer__itemPromotion">
+              <span class="promotion-text">50% <span>+ barato</span></span>
+            </div>
+          </div>
+
+          <div class="refrigeratorsContainer__itemDescription">
+            <h3 class="refrigeratorsContainer__itemDescription-title">Lorem ipsum dolor sit amet</h3>
+            <p class="refrigeratorsContainer__itemDescription-model">CF676AR</p>
+            
+            <div class="refrigeratorsContainer__itemDescription-prices">
+              <span class="from">De: R$ <span>2.219,00</span> por:</span>
+              <span class="price">R$ 2.121,00</span>
+              <span class="description">à vista no boleto bancário</span>
+              <span class="term">ou até 12x de R$ <span>528,06</span></span>
+            </div>
+          </div>
+
+          <a class="bf__c-button" href="#">adicionar ao carrinho</a>
+
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+  </section>
+  <section class="best">
+    <div class="bf__c-container">
+      <h2 class="sectionTitle">Os mais vendidos da categoria <span>Geladeiras</span></h2>
+
+      <div class="bestContainer">
+        <div class="refrigeratorsContainer__item">
+          
+          <div class="refrigeratorsContainer__itemImage">
+            <img src="public/images/product-01-imagem-frontal-1000X1000.jpg" aria-hidden="true" alt="Geladeira"/>
+            <div class="refrigeratorsContainer__itemPromotion">
+              <span class="promotion-text">50% <span>+ barato</span></span>
+            </div>
+          </div>
+
+          <div class="refrigeratorsContainer__itemDescription">
+            <h3 class="refrigeratorsContainer__itemDescription-title">Lorem ipsum dolor sit amet</h3>
+            <p class="refrigeratorsContainer__itemDescription-model">CF676AR</p>
+            
+            <div class="refrigeratorsContainer__itemDescription-prices">
+              <span class="from">De: R$ <span>2.219,00</span> por:</span>
+              <span class="price">R$ 2.121,00</span>
+              <span class="description">à vista no boleto bancário</span>
+              <span class="term">ou até 12x de R$ <span>528,06</span></span>
+            </div>
+          </div>
+
+          <a class="bf__c-button" href="#">adicionar ao carrinho</a>
+
+        </div>
+        <div class="refrigeratorsContainer__item">
+          
+          <div class="refrigeratorsContainer__itemImage">
+            <img src="public/images/product-01-imagem-frontal-1000X1000.jpg" aria-hidden="true" alt="Geladeira"/>
+            <div class="refrigeratorsContainer__itemPromotion">
+              <span class="promotion-text">50% <span>+ barato</span></span>
+            </div>
+          </div>
+
+          <div class="refrigeratorsContainer__itemDescription">
+            <h3 class="refrigeratorsContainer__itemDescription-title">Lorem ipsum dolor sit amet</h3>
+            <p class="refrigeratorsContainer__itemDescription-model">CF676AR</p>
+            
+            <div class="refrigeratorsContainer__itemDescription-prices">
+              <span class="from">De: R$ <span>2.219,00</span> por:</span>
+              <span class="price">R$ 2.121,00</span>
+              <span class="description">à vista no boleto bancário</span>
+              <span class="term">ou até 12x de R$ <span>528,06</span></span>
+            </div>
+          </div>
+
+          <a class="bf__c-button" href="#">adicionar ao carrinho</a>
+
+        </div>
+        <div class="refrigeratorsContainer__item">
+          
+          <div class="refrigeratorsContainer__itemImage">
+            <img src="public/images/product-01-imagem-frontal-1000X1000.jpg" aria-hidden="true" alt="Geladeira"/>
+            <div class="refrigeratorsContainer__itemPromotion">
+              <span class="promotion-text">50% <span>+ barato</span></span>
+            </div>
+          </div>
+
+          <div class="refrigeratorsContainer__itemDescription">
+            <h3 class="refrigeratorsContainer__itemDescription-title">Lorem ipsum dolor sit amet</h3>
+            <p class="refrigeratorsContainer__itemDescription-model">CF676AR</p>
+            
+            <div class="refrigeratorsContainer__itemDescription-prices">
+              <span class="from">De: R$ <span>2.219,00</span> por:</span>
+              <span class="price">R$ 2.121,00</span>
+              <span class="description">à vista no boleto bancário</span>
+              <span class="term">ou até 12x de R$ <span>528,06</span></span>
+            </div>
+          </div>
+
+          <a class="bf__c-button" href="#">adicionar ao carrinho</a>
+
+        </div>
+        <div class="refrigeratorsContainer__item">
+          
+          <div class="refrigeratorsContainer__itemImage">
+            <img src="public/images/product-01-imagem-frontal-1000X1000.jpg" aria-hidden="true" alt="Geladeira"/>
+            <div class="refrigeratorsContainer__itemPromotion">
+              <span class="promotion-text">50% <span>+ barato</span></span>
+            </div>
+          </div>
+
+          <div class="refrigeratorsContainer__itemDescription">
+            <h3 class="refrigeratorsContainer__itemDescription-title">Lorem ipsum dolor sit amet</h3>
+            <p class="refrigeratorsContainer__itemDescription-model">CF676AR</p>
+            
+            <div class="refrigeratorsContainer__itemDescription-prices">
+              <span class="from">De: R$ <span>2.219,00</span> por:</span>
+              <span class="price">R$ 2.121,00</span>
+              <span class="description">à vista no boleto bancário</span>
+              <span class="term">ou até 12x de R$ <span>528,06</span></span>
+            </div>
+          </div>
+
+          <a class="bf__c-button" href="#">adicionar ao carrinho</a>
+
+        </div>
+        <div class="refrigeratorsContainer__item">
+          
+          <div class="refrigeratorsContainer__itemImage">
+            <img src="public/images/product-01-imagem-frontal-1000X1000.jpg" aria-hidden="true" alt="Geladeira"/>
+            <div class="refrigeratorsContainer__itemPromotion">
+              <span class="promotion-text">50% <span>+ barato</span></span>
+            </div>
+          </div>
+
+          <div class="refrigeratorsContainer__itemDescription">
+            <h3 class="refrigeratorsContainer__itemDescription-title">Lorem ipsum dolor sit amet</h3>
+            <p class="refrigeratorsContainer__itemDescription-model">CF676AR</p>
+            
+            <div class="refrigeratorsContainer__itemDescription-prices">
+              <span class="from">De: R$ <span>2.219,00</span> por:</span>
+              <span class="price">R$ 2.121,00</span>
+              <span class="description">à vista no boleto bancário</span>
+              <span class="term">ou até 12x de R$ <span>528,06</span></span>
+            </div>
+          </div>
+
+          <a class="bf__c-button" href="#">adicionar ao carrinho</a>
+
+        </div>
+        <div class="refrigeratorsContainer__item">
+          
+          <div class="refrigeratorsContainer__itemImage">
+            <img src="public/images/product-01-imagem-frontal-1000X1000.jpg" aria-hidden="true" alt="Geladeira"/>
+            <div class="refrigeratorsContainer__itemPromotion">
+              <span class="promotion-text">50% <span>+ barato</span></span>
+            </div>
+          </div>
+
+          <div class="refrigeratorsContainer__itemDescription">
+            <h3 class="refrigeratorsContainer__itemDescription-title">Lorem ipsum dolor sit amet</h3>
+            <p class="refrigeratorsContainer__itemDescription-model">CF676AR</p>
+            
+            <div class="refrigeratorsContainer__itemDescription-prices">
+              <span class="from">De: R$ <span>2.219,00</span> por:</span>
+              <span class="price">R$ 2.121,00</span>
+              <span class="description">à vista no boleto bancário</span>
+              <span class="term">ou até 12x de R$ <span>528,06</span></span>
+            </div>
+          </div>
+
+          <a class="bf__c-button" href="#">adicionar ao carrinho</a>
+
+        </div>
+        <div class="refrigeratorsContainer__item">
+          
+          <div class="refrigeratorsContainer__itemImage">
+            <img src="public/images/product-01-imagem-frontal-1000X1000.jpg" aria-hidden="true" alt="Geladeira"/>
+            <div class="refrigeratorsContainer__itemPromotion">
+              <span class="promotion-text">50% <span>+ barato</span></span>
+            </div>
+          </div>
+
+          <div class="refrigeratorsContainer__itemDescription">
+            <h3 class="refrigeratorsContainer__itemDescription-title">Lorem ipsum dolor sit amet</h3>
+            <p class="refrigeratorsContainer__itemDescription-model">CF676AR</p>
+            
+            <div class="refrigeratorsContainer__itemDescription-prices">
+              <span class="from">De: R$ <span>2.219,00</span> por:</span>
+              <span class="price">R$ 2.121,00</span>
+              <span class="description">à vista no boleto bancário</span>
+              <span class="term">ou até 12x de R$ <span>528,06</span></span>
+            </div>
+          </div>
+
+          <a class="bf__c-button" href="#">adicionar ao carrinho</a>
+
+        </div>
+        <div class="refrigeratorsContainer__item">
+          
+          <div class="refrigeratorsContainer__itemImage">
+            <img src="public/images/product-01-imagem-frontal-1000X1000.jpg" aria-hidden="true" alt="Geladeira"/>
+            <div class="refrigeratorsContainer__itemPromotion">
+              <span class="promotion-text">50% <span>+ barato</span></span>
+            </div>
+          </div>
+
+          <div class="refrigeratorsContainer__itemDescription">
+            <h3 class="refrigeratorsContainer__itemDescription-title">Lorem ipsum dolor sit amet</h3>
+            <p class="refrigeratorsContainer__itemDescription-model">CF676AR</p>
+            
+            <div class="refrigeratorsContainer__itemDescription-prices">
+              <span class="from">De: R$ <span>2.219,00</span> por:</span>
+              <span class="price">R$ 2.121,00</span>
+              <span class="description">à vista no boleto bancário</span>
+              <span class="term">ou até 12x de R$ <span>528,06</span></span>
+            </div>
+          </div>
+
+          <a class="bf__c-button" href="#">adicionar ao carrinho</a>
+
+        </div>
+      </div> 
+    </div>
+  </section>
 
 <script src="/public/main.js"></script>
 </body>

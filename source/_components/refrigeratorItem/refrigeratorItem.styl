@@ -1,0 +1,114 @@
+.refrigeratorsContainer__item 
+  display block
+  width 100%
+  background-color white
+  overflow hidden
+  padding 20px
+  margin-bottom 20px
+  float left
+  
+  +above(tablet)
+    width 48%
+    margin-right 2%
+    
+    &:last-child
+      margin-right 0
+
+  +above(small-desk)
+    width 23%
+    margin-right 2%
+
+
+  
+  .refrigeratorsContainer__itemImage
+    display block
+    width 100%
+    margin-bottom 10px
+    position relative
+  
+    .refrigeratorsContainer__itemPromotion
+      position absolute
+      width 70px
+      height 40px
+      background-color #f8c62f
+      margin 20px 0
+      right 0
+      bottom 0
+      text-align center
+
+      &:after
+      &:before
+        content ''
+        position absolute
+        width 0
+        border-left 35px solid transparent
+        border-right 35px solid transparent
+
+      &:after
+        top 99%
+        width 0
+        border-top 20.21px solid #f8c62f
+        left 0
+        
+      &:before
+        left 0
+        bottom 100%
+        border-bottom 20.21px solid #f8c62f
+        
+      .promotion-text
+        font-size 25px
+        font-weight 900
+        
+        span 
+          display block
+          font-weight 600
+          font-size 11px
+          text-transform uppercase
+
+.refrigeratorsContainer__itemDescription
+  display inline-block
+  width 100%
+  margin 10px auto 20px
+  line-height 20px
+  
+  .refrigeratorsContainer__itemDescription-title
+    color #595a5a
+    font-weight 900
+    display block
+    
+  .refrigeratorsContainer__itemDescription-model
+    font-size 15px
+    color #9b9b9b
+    display block
+    margin-bottom 25px
+    
+  .refrigeratorsContainer__itemDescription-prices
+    display inline-block
+    width 100%
+    
+    > span 
+      display block
+      width 100%
+      font-size 15px
+      color #828282
+      
+    .from 
+      span
+        text-decoration line-through
+        
+    .price
+      color #000
+      font-weight 700
+      font-size 35px
+      margin 10px 0
+
+      +above(tablet)
+        font-size 30px
+      
+    .description 
+      font-weight 900
+      color #555555
+
+.bf__c-button      
+  +above(tablet)
+    font-size 13px
