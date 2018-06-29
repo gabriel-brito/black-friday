@@ -6,6 +6,7 @@ export default class Cart {
     setTimeout(() => {
       this.addItem();
     }, 1000);
+    this.cartTotal();
   }
 
   activatingCart(){
@@ -26,7 +27,21 @@ export default class Cart {
       emptyText.style.display = 'none';
     } else {
       emptyText.style.display = 'block';
+      console.log('Carrinho vazio.');
     }
+
+  }
+
+  cartTotal(value = 0){
+    let totalContainer = document.getElementById('cart-total');
+    let total = Number(document.getElementById('cart-total').innerHTML);
+    
+    if(value != 0)
+      total += value
+    else
+      total = 0
+
+    totalContainer.innerHTML = total;
   }
 
   addItem(){
@@ -37,28 +52,48 @@ export default class Cart {
     for (let i = 0; i < buttons.length; i++) {
       buttonsArray.push(buttons[i]);
     }
+    
+    let cartItems = [];
 
     buttonsArray.map(button => {
       button.onclick = (e) => {
         e.preventDefault();
-        let item = button.parentElement;
+        
+        let isEqual = false;
+        
+        let id = button.getAttribute('data-id');
 
+        for (let i = 0; i < cartItems.length; i++){
+          if(cartItems[i] == id) {
+            isEqual = true;
+          }
+        }
+      
+        cartItems.push(id);
+        
+        let item = button.parentElement;
         let itemImage = item.querySelector('img').getAttribute('src');
         let itemName = item.querySelector('h3').innerHTML;
         let itemPrice = item.querySelector('.total').innerHTML;
-        let Total = Number(document.querySelector('#cart-total').innerHTML);
-
-        this.renderItem(cart, itemImage, itemName, itemPrice);
-        this.emptyCart();
-        this.excludeItem();
+        let transformedPrice = Number(itemPrice);
+        
+        if (isEqual) {
+          console.log('Já existe no carrinho');
+        } else {
+          this.renderItem(cart, itemImage, itemName, itemPrice, id);
+          this.cartTotal(transformedPrice);
+          this.emptyCart();
+          this.excludeItem(cartItems, id);
+        }
+      
       };
     })
 
   }
 
-  renderItem(container, image, name, price){
+  renderItem(container, image, name, price, id){
     container.innerHTML += `
-      <div class="header__m-cartBody-item">
+      <div class="header__m-cartBody-item" data-id="${id}">
           <div class="cartItem__img">
             <img src="${image}" alt="${name}">
           </div>
@@ -78,7 +113,7 @@ export default class Cart {
     `;
   }
 
-  excludeItem(){
+  excludeItem(array, id){
     let excludeButtons = document.querySelectorAll('.header__m-cartBody .exclude-item');
     let excludeButtonsArray = [];
 
@@ -90,10 +125,15 @@ export default class Cart {
       button.onclick = (e) => {
         e.preventDefault();
         button.parentElement.remove();
+        this.cartTotal();
         this.emptyCart();
+        
+        for (let i = 0; i < array.length; i++){
+          if(array[i] == id) {
+            array[i] = []
+          }
+        }
       };
     })
   }
-
-
 }
