@@ -42,7 +42,7 @@ export default class Fetch {
             
             <div class="refrigeratorsContainer__itemDescription-prices">
               <span class="from">De: R$ <span>${data.ListPrice},00</span> por:</span>
-              <span class="price">R$ ${data.Price},00</span>
+              <span class="price">R$ <span class="total">${data.Price}</span>,00</span>
               <span class="description">à vista no boleto bancário</span>
               <span class="term">ou até 12x de R$ <span>${Math.floor(data.ListPrice / 12)},00</span></span>
             </div>
