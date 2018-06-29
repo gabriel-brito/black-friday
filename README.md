@@ -79,6 +79,8 @@ Good news:
 
 * Everything is responsive.
 
+* It's my first time making an cart from zero. That was awesome! I learned a lot!
+
 Bad news:
 
 * All the items from Data has the same ID, so the cart just add one Item.
