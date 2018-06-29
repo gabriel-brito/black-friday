@@ -29,7 +29,6 @@ export default class Cart {
       emptyText.style.display = 'block';
       console.log('Carrinho vazio.');
     }
-
   }
 
   cartTotal(value = 0){
@@ -84,11 +83,9 @@ export default class Cart {
           this.cartTotal(transformedPrice);
           this.emptyCart();
           this.excludeItem(cartItems, id);
-        }
-      
+        }    
       };
     })
-
   }
 
   renderItem(container, image, name, price, id){
@@ -134,6 +131,7 @@ export default class Cart {
           }
         }
       };
-    })
+    });
   }
+  
 }
