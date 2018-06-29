@@ -83,6 +83,8 @@ Good news:
 
 * It's my first time making an cart from zero. That was awesome! I learned a lot!
 
+* Total development time: 10h
+
 Bad news:
 
 * All the items from Data has the same ID, so the cart just add one Item.
